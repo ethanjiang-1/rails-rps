@@ -1,4 +1,8 @@
 class ZebraController < ApplicationController
+  def home
+    render({:template => "game_templates/home"})
+  end
+  
   def giraffe
     @random_move = ["rock", "paper", "scissors"].sample
 
